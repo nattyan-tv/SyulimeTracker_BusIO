@@ -43,7 +43,7 @@ typedef enum _Adafruit_BusIO_SPIRegType {
  */
 class Adafruit_BusIO_Register {
 public:
-  Adafruit_BusIO_Register(Adafruit_I2CDevice *i2cdevice, uint16_t reg_addr,
+  Adafruit_BusIO_Register(SyulimeTracker_I2CDevice *i2cdevice, uint16_t reg_addr,
                           uint8_t width = 1, uint8_t byteorder = LSBFIRST,
                           uint8_t address_width = 1);
 
@@ -52,7 +52,7 @@ public:
                           uint8_t byteorder = LSBFIRST,
                           uint8_t address_width = 1);
 
-  Adafruit_BusIO_Register(Adafruit_I2CDevice *i2cdevice,
+  Adafruit_BusIO_Register(SyulimeTracker_I2CDevice *i2cdevice,
                           Adafruit_SPIDevice *spidevice,
                           Adafruit_BusIO_SPIRegType type, uint16_t reg_addr,
                           uint8_t width = 1, uint8_t byteorder = LSBFIRST,

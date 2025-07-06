@@ -15,7 +15,7 @@
  *    @param  address_width The width of the register address itself, defaults
  * to 1 byte
  */
-Adafruit_BusIO_Register::Adafruit_BusIO_Register(Adafruit_I2CDevice *i2cdevice,
+Adafruit_BusIO_Register::Adafruit_BusIO_Register(SyulimeTracker_I2CDevice *i2cdevice,
                                                  uint16_t reg_addr,
                                                  uint8_t width,
                                                  uint8_t byteorder,
@@ -78,7 +78,7 @@ Adafruit_BusIO_Register::Adafruit_BusIO_Register(Adafruit_SPIDevice *spidevice,
  * to 1 byte
  */
 Adafruit_BusIO_Register::Adafruit_BusIO_Register(
-    Adafruit_I2CDevice *i2cdevice, Adafruit_SPIDevice *spidevice,
+    SyulimeTracker_I2CDevice *i2cdevice, Adafruit_SPIDevice *spidevice,
     Adafruit_BusIO_SPIRegType type, uint16_t reg_addr, uint8_t width,
     uint8_t byteorder, uint8_t address_width)
 {
