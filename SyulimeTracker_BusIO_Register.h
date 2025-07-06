@@ -1,5 +1,5 @@
-#ifndef Adafruit_BusIO_Register_h
-#define Adafruit_BusIO_Register_h
+#ifndef SyulimeTracker_BusIO_Register_h
+#define SyulimeTracker_BusIO_Register_h
 
 #include <Arduino.h>
 

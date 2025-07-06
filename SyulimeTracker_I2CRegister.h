@@ -1,5 +1,5 @@
-#ifndef _ADAFRUIT_I2C_REGISTER_H_
-#define _ADAFRUIT_I2C_REGISTER_H_
+#ifndef _SYULIMETRACKER_I2C_REGISTER_H_
+#define _SYULIMETRACKER_I2C_REGISTER_H_
 
 #include "SyulimeTracker_BusIO_Register.h"
 #include <Arduino.h>

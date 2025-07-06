@@ -1,5 +1,5 @@
-#ifndef Adafruit_SPIDevice_h
-#define Adafruit_SPIDevice_h
+#ifndef SYULIMETRACKER_SPIDevice_h
+#define SYULIMETRACKER_SPIDevice_h
 
 #include <Arduino.h>
 
