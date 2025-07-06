@@ -1,4 +1,4 @@
-#include "Adafruit_SPIDevice.h"
+#include "SyulimeTracker_SPIDevice.h"
 
 // #define DEBUG_SERIAL Serial
 
