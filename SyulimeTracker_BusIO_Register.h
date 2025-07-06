@@ -81,7 +81,7 @@ public:
   void println(Stream *s = &Serial);
 
 private:
-  Adafruit_I2CDevice *_i2cdevice;
+  SyulimeTracker_I2CDevice *_i2cdevice;
   Adafruit_SPIDevice *_spidevice;
   Adafruit_GenericDevice *_genericdevice;
   Adafruit_BusIO_SPIRegType _spiregtype;
