@@ -1,8 +1,17 @@
-# Adafruit Bus IO Library [![Build Status](https://github.com/adafruit/Adafruit_BusIO/workflows/Arduino%20Library%20CI/badge.svg)](https://github.com/adafruit/Adafruit_BusIO/actions)
+# SyulimeTracker_BusIO
 
+AdafruitのBusIOライブラリ、`Adafruit_BusIO`を改造したものです。
 
-This is a helper library to abstract away I2C, SPI, and 'generic transport' (e.g. UART) transactions and registers
+# 変更点
 
-Adafruit invests time and resources providing this open source code, please support Adafruit and open-source hardware by purchasing products from Adafruit!
+デフォルトではこのライブラリ単体によってI2Cのピンを変更出来ません。  
+しかし、ESP32は内部のGPIO MatrixによってI2Cのピンを変更する事ができます。  
+(ArduinoでもソフトウェアI2Cを用いる事で変更可能である。)
 
-MIT license, all text above must be included in any redistribution
+そこで、通常はI2Cアドレスを渡すコンストラクタにSDA、SCLピンの番号を渡すようにしました。  
+内部的には`<Wire>.begin`に対してピン番号を渡しているだけになります。  
+
+# インストール
+
+このライブラリを単体で利用することはほぼないと思います。  
+利用するには、この依存ライブラリを使用した[`nattyan-tv/SyulimeTracker_BNO08x`](https://github.com/nattyan-tv/SyulimeTracker_BNO08x)などを利用してください。
